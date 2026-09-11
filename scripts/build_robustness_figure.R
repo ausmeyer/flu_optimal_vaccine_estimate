@@ -126,19 +126,13 @@ plot <- ggplot(plot_data, aes(y = .data$analysis_label)) +
   ) +
   labs(
     x = "Vaccination week (MMWR)",
-    y = NULL,
-    caption = paste(
-      "Points show the regret-minimizing fixed week.",
-      "Thick and thin intervals show the central 50% and 95%",
-      "of simulation-specific optimal weeks."
-    )
+    y = NULL
   ) +
   theme_minimal(base_size = 10) +
   theme(
     panel.grid.major.y = element_blank(),
     panel.grid.minor = element_blank(),
-    axis.text = element_text(color = "#252525"),
-    plot.caption = element_text(hjust = 0, color = "#4D4D4D", size = 8)
+    axis.text = element_text(color = "#252525")
   )
 
 ggsave(
