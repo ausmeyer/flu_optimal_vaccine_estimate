@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+.Rhistory
+.RData
+.Renviron
+.Rproj.user/
+*.Rproj
+/tmp/
+
+# Local working material
+/archive/
+/docs/
+/manuscript/
+/literature/
+Rplots.pdf
+
+# Downloaded and generated artifacts (keep empty directory structure)
+/data/raw/*
+!data/raw/.gitkeep
+/data/processed/*
+!data/processed/.gitkeep
+/data/manual/
+/models/*
+!models/.gitkeep
+
+/outputs/*
+!outputs/.gitkeep
